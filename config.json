@@ -3,9 +3,9 @@
     { "name": "media",
       "color": "red",
       "links": [
-        { "name": "Spotify", "url": "https://open.spotify.com/" },
-        { "name": "YoutubeMusic", "url": "https://music.youtube.com/" },
-        { "name": "Netflix", "url": "https://netflix.com" },
+        { "name": "Invidio", "url": "https://invidio.us/" },
+        { "name": "Soundcloud", "url": "https://soundcloud.com/" },
+        { "name": "LBRY", "url": "https://lbry.tv" },
         { "name": "Youtube", "url": "https://youtube.com" }
       ]
     },
@@ -13,38 +13,40 @@
       "color": "#26A69A",
       "links": [
         { "name": "Github", "url": "https://github.com" },
-        { "name": "Heroku", "url": "http://heroku.com/" },
+        { "name": "Gitlab", "url": "http://gitlab.com/" },
         { "name": "localhost", "url": "http://localhost:8000/" }
       ]
     },
     { "name": "social",
       "links": [
         { "name": "Reddit", "url": "https://reddit.com" },
-        { "name": "Unixporn Love", "url": "https://deepjyoti30.github.io/unixporn-love/" },
+        { "name": "/w/", "url": "https://boards.4channel.org/w/" },
+        { "name": "/wg/", "url": "https://boards.4channel.org/wg/" },
         { "name": "r/unixporn", "url": "https://www.reddit.com/r/unixporn/" },
-        { "name": "r/mk", "url": "https://www.reddit.com/r/MechanicalKeyboards/" }
+        { "name": "r/opendirectories", "url": "https://www.reddit.com/r/opendirectories/" }
       ]
     },
     {
       "name": "Others",
       "links": [
-        {"name": "Material Colors", "url": "http://materialuicolors.co/"},
-        {"name": "Gmail", "url": "http://gmail.com/"},
-        {"name": "neo4j Local", "url": "http://localhost:7474/"},
-        {"name": "rarbg", "url": "http://rarbg.to"}
+        {"name": "Sci-Hub", "url": "http://sci-hub.tw/"},
+        {"name": "Science Direct", "url": "https://www.sciencedirect.com/"},
+        {"name": "日本語", "url": "https://itazuraneko.neocities.org/"},
+        {"name": "N-O-D-E", "url": "https://n-o-d-e.news/"},
+        {"name": "Archwiki", "url": "https://wiki.archlinux.org"}
       ]
     }
   ],
   "searchEngine":"DuckDuckGo",
-  "user": "Deepjyoti",
+  "user": "ニシミヤ",
   "disableMessage": false,
   "disableDate": false,
   "disableSearchBar": false,
   "disable24Hour": false,
-  "disableWeather": true,
-  "timeZone": "America/Los_Angeles",
+  "disableWeather": false,
+  "timeZone": "Indonesia/Depok",
   "weatherConf": {
-    "location": "Pune India",
+    "location": "Depok Indonesia",
     "unit": "cel"
   }
 }

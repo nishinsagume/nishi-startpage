@@ -45,7 +45,7 @@ validQuickLinks = {}
 function initBody() {
     /**
      * Function called when the body is loaded.
-     * 
+     *
      * Do everything like adding an event listener to
      * other things.
      */
@@ -93,14 +93,14 @@ function initSearchBar(jsonData) {
 function buildMsg() {
     /**
      * Build a nice message for the user.
-     * 
+     *
      * Following is how the message would be decided.
-     * 0 - 5:59 : It's too late, take some sleep
-     * 6 - 8:59 : You're up early
-     * 9 - 11:59 : Have a good day ahead
-     * 12 - 16:59 : Good Afternoon
-     * 17 - 19:59 : Good Evening
-     * 20 - 23:59 : It's time to wrap up for the day
+     * 0 - 5:59 : It's too late, take some sleep / もう遅いから寝なさい
+     * 6 - 8:59 : You're up early / 早起き
+     * 9 - 11:59 : Have a good day ahead / よい一日を
+     * 12 - 16:59 : Good Afternoon / ごきげんよ
+     * 17 - 19:59 : Good Evening / こんばんは
+     * 20 - 23:59 : It's time to wrap up for the day / もう遅いから寝なさい
      */
     date = new Date()
     currentHour = date.getHours()
@@ -108,17 +108,17 @@ function buildMsg() {
     currentTime = currentHour + (0.01 * currentMinute)
 
     if (inRange(currentTime, 0, 5.59))
-        return "It's too late, take some sleep"
+        return "もう遅いから寝なさい"
     if (inRange(currentTime, 6, 8.59))
-        return "You're up early"
+        return "早起き"
     if (inRange(currentTime, 9, 11.59))
-        return "Have a good day ahead"
+        return "よい一日を"
     if (inRange(currentTime, 12, 16.59))
-        return "Good Afternoon"
+        return "ごきげんよう"
     if (inRange(currentTime, 17, 19.59))
-        return "Good Evening"
+        return "こんばんは"
     if (inRange(currentTime, 20, 24))
-        return "It's time to wrap up for the day"
+        return "そろそろ一日の締めくくりの時間ですね!"
     else
         return ""
 }
@@ -197,8 +197,8 @@ function parseAndCreate(jsonData) {
 
     // Build a message for the user
     builtMsg = buildMsg()
-    builtMsg == "" ? 
-        builtMsg = `Hello ${this.userName}` : builtMsg = `Hey ${this.userName}, ${builtMsg}!`
+    builtMsg == "" ?
+        builtMsg = `こんにちは${this.userName}` : builtMsg = `ハロー${this.userName}, ${builtMsg}!`
     document.getElementById(messageId).textContent = builtMsg
     // Check if 24 hour is disabled
     disable24Hour = jsonData["disable24Hour"]
@@ -235,7 +235,7 @@ function parseAndCreate(jsonData) {
         sqr = createSqr(element, index)
         document.getElementById(otherContentId).appendChild(sqr)
     })
-    
+
 }
 
 function createSqr(sqrData, index) {
@@ -271,7 +271,7 @@ function createSqr(sqrData, index) {
     links.forEach(element => {
         aName = element["name"]
         aHref = element["url"]
-        
+
         a = document.createElement("a")
         attrHref = document.createAttribute("href")
         attrHref.value = aHref
@@ -318,7 +318,7 @@ function inRange(number, min, max) {
 function isColorValid(color) {
     /**
      * Check if the passed color is valid.
-     * 
+     *
      * Currently supports only css color names
      * or hex colors having 3 or 6 characters.
      */
@@ -335,12 +335,12 @@ function createClass(color) {
     /**
      * Create a new class in a style and add it to
      * the head.
-     * 
+     *
      * I did check other alternatives since adding something like
      * this in the innerHTML is not a preferred way to go,
      * especially since I'm building this as an extension,
-     * however, there's no other way. 
-     * 
+     * however, there's no other way.
+     *
      * Since I also want to add hover effects, there seriously
      * is no other way to do that without adding a style or using
      * a library (cannot/don't want to do that because this is an extension).
@@ -358,7 +358,7 @@ function createClass(color) {
 function extractQuickLinks(passedSqrs) {
     /**
      * Extract the quicklinks passed in the config
-     * 
+     *
      * Cache the quicklinks passed by the user in the config JSON
      * so that they can be used as a shortcut called from the
      * search bar.
