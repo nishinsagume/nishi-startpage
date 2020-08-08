@@ -4,7 +4,6 @@
       "color": "red",
       "links": [
         { "name": "Invidio", "url": "https://invidio.us/" },
-        { "name": "Soundcloud", "url": "https://soundcloud.com/" },
         { "name": "LBRY", "url": "https://lbry.tv" },
         { "name": "Youtube", "url": "https://youtube.com" }
       ]
@@ -14,16 +13,17 @@
       "links": [
         { "name": "Github", "url": "https://github.com" },
         { "name": "Gitlab", "url": "http://gitlab.com/" },
+        { "name": "Classroom", "url": "http://classroom.google.com/" },
+        { "name": "Wolfram", "url": "http://wolframalpha.com/" },
         { "name": "localhost", "url": "http://localhost:8000/" }
       ]
     },
     { "name": "social",
       "links": [
-        { "name": "Reddit", "url": "https://reddit.com" },
+        { "name": "Discord", "url": "https://discordapp.com/channels/@me" },
         { "name": "/w/", "url": "https://boards.4channel.org/w/" },
         { "name": "/wg/", "url": "https://boards.4channel.org/wg/" },
-        { "name": "r/unixporn", "url": "https://www.reddit.com/r/unixporn/" },
-        { "name": "r/opendirectories", "url": "https://www.reddit.com/r/opendirectories/" }
+        { "name": "r/unixporn", "url": "https://www.reddit.com/r/unixporn/" }
       ]
     },
     {
@@ -32,8 +32,8 @@
         {"name": "Sci-Hub", "url": "http://sci-hub.tw/"},
         {"name": "Science Direct", "url": "https://www.sciencedirect.com/"},
         {"name": "日本語", "url": "https://itazuraneko.neocities.org/"},
-        {"name": "N-O-D-E", "url": "https://n-o-d-e.news/"},
-        {"name": "Archwiki", "url": "https://wiki.archlinux.org"}
+        {"name": "N-O-D-E", "url": "https://n-o-d-e.net/"},
+        {"name": "Archwiki", "url": "https://wiki.archlinux.org/"}
       ]
     }
   ],

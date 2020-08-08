@@ -1,10 +1,10 @@
 {
   "manifest_version": 2,
-  "name": "minimal-startpage",
-  "short_name": "minimal-startpage",
+  "name": "nishi-startpage",
+  "short_name": "nishi-startpage",
   "version": "0.1.1",
   "description": "Overrides the browsers newtab page with a custom startpage.",
-  "author": "deepjyoti30",
+  "author": "nishinsagume",
 
   "icons": {
     "64": "img/icon64.png"
