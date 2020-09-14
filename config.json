@@ -3,8 +3,10 @@
     { "name": "media",
       "color": "red",
       "links": [
-        { "name": "Invidio", "url": "https://invidio.us/" },
+        { "name": "Invidious", "url": "https://invidious.snopyta.org" },
         { "name": "LBRY", "url": "https://lbry.tv" },
+        { "name": "dstyle", "url": "https://doujinstyle.com" },
+        { "name": "mikudb", "url": "https://mikudb.moe" },
         { "name": "Youtube", "url": "https://youtube.com" }
       ]
     },
@@ -21,8 +23,9 @@
     { "name": "social",
       "links": [
         { "name": "Discord", "url": "https://discordapp.com/channels/@me" },
-        { "name": "/w/", "url": "https://boards.4channel.org/w/" },
-        { "name": "/wg/", "url": "https://boards.4channel.org/wg/" },
+        { "name": "Twitter", "url": "https://twitter.com/" },
+        { "name": "Mastodon", "url": "https://mastodon.social" },
+        { "name": "/w/allpaper", "url": "https://boards.4channel.org/w/" },
         { "name": "r/unixporn", "url": "https://www.reddit.com/r/unixporn/" }
       ]
     },
